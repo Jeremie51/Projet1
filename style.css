@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+orm {
+    margin-left: 30%;
+    margin-right: 35%;
+    width: 400px;
+  }
+  #address,
+  #comment,
+  #email,
+  #message {
+    width: 600px;
+    box-sizing: border-box;
+  }
+  #message {
+    vertical-align: top;
+    height: 10em;
+  }
+  #formulaire input {
+    float: right;
