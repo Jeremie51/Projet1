@@ -343,7 +343,7 @@ form {
     position: relative;
     width: 100vw;
     /* min-height: 800px; */
-    background-color: white;
+    background-color: black;
     display: flex;
     justify-content: center;
 
