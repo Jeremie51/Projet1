@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
     color: var(--main-color);
   
 }
@@ -32,11 +31,6 @@ body {
     border-radius: 2px;
 }
 
-/* .titrecarousel{ */
-   /* display: flex; */
-   /* justify-content: center; */
-
-/* } */
 
 :root {
     --main-color: #5D7A98;
@@ -125,13 +119,12 @@ nav {
     width: 35vw;
     height: 100%;
     z-index: 1;
+    list-style: none;
 }
 
 .menu li a {
     font-size: 30px;
     transition: var(--transition);
-    ;
-    
        
 }
 
@@ -295,18 +288,15 @@ nav {
     .search-container input:checked ~ .icon-search-close {
         opacity: 1;
     }
-
-   
-
-    }
+ }
 
 
    
-h1  {
+.titleForm  {
     color: #4f859b;
     font-family: Arial;
 }
-form {
+#formulaire {
     width: 600px;
     margin: 0;
     padding: 0;
@@ -331,7 +321,7 @@ form {
     position: absolute;
   }
 
-  button {
+  .sendingBtn {
     padding: 0.9em 2em;
     border: 2px solid #084c6b;
     position: relative;
@@ -346,7 +336,7 @@ form {
     font-family: inherit;
     color: #eff1f3;
    }
-   button::before {
+   .sendingBtn:before {
     content: '';
     width: 0;
     height: 300%;
@@ -359,13 +349,13 @@ form {
     display: block;
     z-index: -1;
    }
-   button:hover::before {
+   .sendingBtn:hover:before {
     width: 105%;
    }
-   button:hover {
+   .sendingBtn:hover {
     color: rgb(255, 255, 255);
    }
-   img{
+   .imgFormulaire{
     width: 40%;
     height: 200px;
    }
@@ -562,7 +552,7 @@ form {
     transition-duration: 0.8s;
 }
 
-img {
+.img-card {
     width: 200px;
     height:200px;
     object-fit: cover;
