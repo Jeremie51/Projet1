@@ -365,7 +365,6 @@ nav {
     position: relative;
     width: 100vw;
     /* min-height: 800px; */
-    background-color: black;
     display: flex;
     justify-content: center;
 
@@ -375,7 +374,6 @@ nav {
     /* position: relative; */
     /* margin-left: 15vw;
     margin-right: 15vw; */
-    background-color: #9CBFA7;
     display: flex;
     flex-direction: column;
     max-width: 1024px;
@@ -475,14 +473,10 @@ nav {
 /*reverse*/
 
 .main-container-reverse {
-
-    background-color: white;
     display: flex;
     flex-direction: column;
     max-width: 1024px;
-
-    
-}
+   }
 
 .title-container-reverse {
     display: flex;
@@ -493,7 +487,6 @@ nav {
 }
 
 .description-container-reverse{
-    
         display: flex;
         align-items: center;
         flex-direction: row-reverse;    
