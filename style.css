@@ -263,10 +263,7 @@ nav {
     .search-container input:checked ~ .icon-search-close {
         opacity: 1;
     }
-
-   
-
-    }
+}
 
 
    
@@ -274,6 +271,7 @@ h1  {
     color: #4f859b;
     font-family: Arial;
 }
+
 form {
     width: 600px;
     margin: 0;
@@ -281,6 +279,7 @@ form {
     font-family: Arial;
     background-color:rgb(76, 145, 167);
 }
+
   #name,
   #email,
   #objet,
@@ -289,8 +288,8 @@ form {
     box-sizing: border-box;
     /*padding:10px;
    margin-top: 5px;*/
-
   }
+  
   #message {
     vertical-align: top;
     height: 10em;
