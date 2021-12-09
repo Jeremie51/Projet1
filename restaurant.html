@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Secret Paris</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Restaurants à déguster</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4UsK2dSKPU6QU2OUUXZ97Fl0t6OkOnW1Qw&usqp=CAU" type="images/x-con">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    </head>
 <body>
+    <section>
+        <nav>
+           <div class="nav-logo-container">
+               <a class="mobile-nav-logo-link" href="#">
+                   <img class="mobile-nav-logo" src="https://cdn.pixabay.com/photo/2018/05/02/22/22/cat-3369865_960_720.png" alt="secret paris navbar logo">
+               </a>
+   
+               <a class="desktop-nav-logo-link" href="#">
+                   <img class="desktop-nav-logo" src="https://cdn.pixabay.com/photo/2016/01/16/23/07/cat-1144200_960_720.png" alt="secret paris navbar logo">
+               </a>
+   
+           </div>
+           <a href="#">
+               <h1 class="title">Paris Secret</h1>
+           </a>
+           <div class="search-container">
+               <input type="checkbox" class="search-toggle-btn"></input>
+               <img class="icon-search"src="https://cdn.pixabay.com/photo/2013/07/12/14/49/find-148857_960_720.png" alt="search button"></img>
+               <img class="icon-search-close" src="https://cdn.pixabay.com/photo/2017/07/04/08/12/cross-2470297_960_720.png" alt="closing search button"></img>
+               <input class="searchbar" type="text" name="search" placeholder=" Search"></input>
+           </div>
+           <div class="navlink-container">
+               <input type="checkbox" class="menu-toggle-btn"></input>
+               <div class="burger-menu"></div>
+               <ul class="menu">
+                   <li><a href="#">Accueil</a></li>
+                   <li><a href="restaurant.html">Restaurants</a></li>
+                   <li><a href="museum.html">Musées</a></li>
+                   <li><a href="visites.html">Visites</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </div>
+       </nav>
+       <div class="nav-bottom"></div>
+   </section>
+       
+   <div class="cards">
+    <div class="card">
+        <div onmouseover="translationButtonLink()" class="card-header">
+            <div class="card-image" ></div>
+        </div>
+        <div class="card-body">
+            <button class="card-name" onclick="window.open('https://www.kigard.fr/','_blank')">Tests tests</button>
+        </div>
+    </div>
+    </div> 
     
-    <section class="main-section">
+    <section class="main-section" id="section1">
         <div class="main-container">
             <div class="title-container">
                 <h2>Dans le noir ?</h2>
@@ -34,11 +90,11 @@
         </div>
     </section>
 
-    <section class="transition-section">
+    <section class="transition-section img-back3">
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section2">
         <div class="main-container-reverse">
             <div class="title-container-reverse">
                 <h2>Le Bustronome</h2>
@@ -52,6 +108,7 @@
 
                 <div class="paragraph-container">
                     <p>Le BUSTRONOME est un bus à impériale ‘haut de gamme’ qui se singularise notamment par son toit entièrement vitré. Il plonge ses passagers dans l’univers parisien dans les meilleures conditions possibles, quelle que soit la saison.</p>
+                    <p class="contact-info">2 Avenue Kléber, 75016 Paris<br>09 54 44 45 55</p>
                 </div>
             </div>
             <div class="button-container">
@@ -62,6 +119,76 @@
     </section>
 
 
+    <section class="transition-section img-back2">
+
+    </section>
+
+    <section class="main-section" id="section3">
+        <div class="main-container">
+            <div class="title-container">
+                <h2>Dans le noir ?</h2>
+          
+            </div>
+            <div class="description-container">
+                <div class="image-container">
+                    <img class="image-style" src="./assets/img/dans-le-noir-768x593.png" alt="food image">
+                </div>
+            
+
+                <div class="paragraph-container">
+                    <p>Depuis 2004, le restaurant Dans le Noir ? vous propose de déguster, au cœur de Paris, une cuisine gastronomique, créative, de saison dans l’obscurité totale accompagnés et servis par des guides inattendus. Dîner ou déjeuner dans le noir absolu est une expérience originale qui permet de réévaluer notre perception du goût  tout en nous réappropriant nos sens, de ré-enchanter notre relation au monde et aux autres et de vivre une rencontre surprenante avec la différence.</p>
+                    <p class="contact-info">51, rue Quincampoix 75004 Paris <br> 01 42 77 98 04</p>
+               
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="link-button" onclick="window.open('https://g.page/danslenoirparis?share','_blank')">Map</button>
+                <button class="link-button" onclick="window.open('https://paris.danslenoir.com/','_blank')">En savoir plus</button>
+            </div>
+        </div>
+    </section>
     
+    <section class="transition-section img-back3">
+
+    </section>
+
+    <section class="main-section" id="section4">
+        <div class="main-container-reverse">
+            <div class="title-container-reverse">
+                <h2>Le Loup</h2>
+          
+            </div>
+            <div class="description-container-reverse">
+                <div class="image-container">
+                    <img class="image-style" src="https://img3.parisbouge.com/4ZEQummU7fKYnMU6l2JAIZdYrZ97ZXL_KWLDtHSfM-Q/rs:fill:750:375:1/g:ce/ZjIyMTNkNjktZGNiZi00MGNlLThkYzUtNjhjNTVlOTA2MzU2LmpwZw.jpg" alt="bar">
+                </div>
+            
+
+                <div class="paragraph-container">
+                    <p>Le Loup est un bar du 9e arrondissement à l'ambiance conviviale et chaleureuse, et surtout sans chichis. Le Loup détient une cave à vins vraiment intéressante, vous pourrez donc y déguster d'excellents vins autour d'une généreuse assiette de charcuteries. Tous les produits sont issus du terroir et fournis par les meilleurs producteurs. En bref, au Loup, vous passerez une soirée agréable, entre rires et bien manger, une soirée comme on les aime.</p>
+                    <p class="contact-info">25 rue bergère, 75009 Paris</p>
+               
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="link-button" onclick="window.open('https://g.page/danslenoirparis?share','_blank')">Map</button>
+                <button class="link-button" onclick="window.open('https://paris.danslenoir.com/','_blank')">En savoir plus</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="scroll_to_top">
+        <a href="#top"><img src="https://cdn.pixabay.com/photo/2013/07/12/19/20/arrow-154593_960_720.png" alt="Retourner en haut" /></a>
+    </div>
+
+    <section>
+        <div class="footer-top"></div>
+        <footer class="footer"></footer>  
+    </section>   
+    
+    <script src="restaurant.js">
+    </script>
+
 </body>
 </html>

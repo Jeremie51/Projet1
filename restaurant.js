@@ -52,33 +52,3 @@ function createCard(imageUrl, name) {
 for (let i = 0; i < placeToEat.length; i++) {
   createCard(placeToEat[i].placeImage, placeToEat[i].placeName);
 }
-
-
-
-
-
-
-
-
-// const wallImg = document.querySelector(".card-body");
-// wallImg.addEventListener("mouseleave", () => {
-//   wallImg.src = "https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp";
-// });
-
-// function translationButtonLink() {
-//   const movingButton = document.getElementsByClassName("card-name");
-//   movingButton.classList.add("new-translation");
-// }
-
-// const wallImg = document.querySelector(".card-body");
-// wallImg.addEventListener("mouseleave", () => {
-//   wallImg.src = "https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp";
-// });
-
-// let linkedButton ==> document.querySelector("button");
-// linkedButton.addEventListener("onclick", () => {
-// // recherche dans le tableau sur les placeLink
-//   for (let i = 0; i < placeToEat.length; i++) {
-//     createCard(placeToEat[i].placeLink);
-//   }
-// })
