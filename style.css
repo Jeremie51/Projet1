@@ -3,7 +3,6 @@ body {
     padding: 0;
     text-decoration: none;
     color: var(--main-color);
-  
 }
 
 /* carousel */
@@ -360,14 +359,15 @@ nav {
     height: 200px;
    }
 
-   
+ /* Start Florent section   */
 .main-section {
     position: relative;
     width: 100vw;
+
     /* min-height: 800px; */
     display: flex;
     justify-content: center;
-
+    padding-bottom: 30px;
 }
 
 .main-container {
@@ -383,7 +383,7 @@ nav {
 
 .title-container {
     /* display: flex; */
-    margin-left: 10px;
+    margin-left: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -411,12 +411,12 @@ nav {
 
 .image-style {
     border-radius: 10px;
-    height: 400px;
+    /* height: 400px; */
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 8px 5px rgba(201,97,255,0);
     transition: transform 1s;
-    /* max-width: 500px;
+    max-width: 500px;
 
-    position: center; */
+    /*position: center; */
 }
 
 .image-style:hover{
@@ -434,8 +434,8 @@ nav {
 .contact-info {
     display: flex;
     justify-content: center;
-    padding: 30px;
-    text-align: center;
+    /* padding: 30px; */
+    text-align: justify;
 }
 
 /*button*/
@@ -480,7 +480,7 @@ nav {
 
 .title-container-reverse {
     display: flex;
-    margin-right: 10px;
+    margin-right: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: flex-end;
@@ -495,20 +495,134 @@ nav {
 
 /*transition image*/
 
+.img-back1{
+    background-image: url("./assets/img/photo-1499856871958-5b9627545d1a.jfif");
+}
+
+.img-back2{
+    background-image: url("https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+.img-back3{
+    background-image: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+}
+
+.img-back4{
+    background-image: url("https://images.unsplash.com/photo-1542300205-6fe56ce087e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+.img-back5{
+    background-image: url("https://images.unsplash.com/photo-1578163678052-eef169544f75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+.img-back6{
+    background-image: url("https://images.unsplash.com/photo-1556483006-929c54bd62a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+}
+
 .transition-section {
 
     width: 100vw;
-    height: 250px;
+    height: 300px;
     display: flex;
-    background-image: url("./assets/img/photo-1499856871958-5b9627545d1a.jfif");
+
     background-size: cover;
     background-position: center;
     opacity: 90%;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
+    filter: blur(2px) grayscale(100%);
+    -webkit-filter: blur(2px), grayscale(100%);
 
+    /*parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+@media screen and (max-width: 767px) {
+
+    .main-section {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-bottom: 0px;
+        
+    }
+
+    .description-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .image-container {
+        display: flex;
+
+        /* max-width: 200px; */
+        margin-left: 0px;
+        margin-right: 0px;
+
+        animation-name:slideIn;
+        animation-duration:2s;
+    
+        }
+
+    .image-style {
+        border-radius: 10px;
+        max-height: 300px;
+        max-width: 310px;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 8px 5px rgba(201,97,255,0);
+        transition: transform 1s;
+    }
+
+    .main-container-reverse {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+       }
+    .description-container-reverse{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+
+    .transition-section {
+
+        width: 100vw;
+        max-height: 200px;
+       
+    }
+
+
+    @keyframes slideIn {
+        from {
+          transform: translate(-200px, 0px);
+        }
+        to {
+          transform: translate(0px, 0px);
+        }
+    }
+}
+
+#scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+  }
+  #scroll_to_top img {
+    width: 25px;
+  }
+/* End Florent section */
 
 .card-body {
     display: flex;
