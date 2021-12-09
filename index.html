@@ -50,7 +50,7 @@
         </div>
     </nav>
      
-
+    <section class='carrousel'>
     <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
 
         <ol class="carousel-indicators">
@@ -98,23 +98,23 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-         
-    <div onmouseover="translationButtonLink()" class="card-body">
-      <div class="card-image">
-        <img 
-        src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
-        class="img-card" 
-        alt="Le mur des Je t'aime">
-      </div>
-      <div class="card-name" id="animation">Lien de la carte</div>
+    </section>
+
+    <div class="cards">
+        <div class="card">
+            <div onmouseover="translationButtonLink()" class="card-header">
+                <div class="card-image" ></div>
+            </div>
+            <div class="card-body">
+                <button class="card-name" onclick="window.open('https://www.kigard.fr/','_blank')">Tests tests</button>
+            </div>
+        </div>
     </div>   
           
-      <script src="index.js"></script>
-      <script>
-        $('.carousel').carousel({
-            pause: "null"
-        })
-      </script>
+      <script src="index.js">        $('.carousel').carousel({
+        pause: "null"
+    })</script>
+
 
 </body>
 
