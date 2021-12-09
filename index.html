@@ -4,68 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Secret Paris</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4UsK2dSKPU6QU2OUUXZ97Fl0t6OkOnW1Qw&usqp=CAU" type="images/x-con">
-  </head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
 <body>
-     <nav>
-        <div class="nav-logo-container">
-            <a href="#">
-                <img class="nav-logo" src="https://cdn.pixabay.com/photo/2020/01/28/12/17/mime-4799636_960_720.png" alt="secret paris navbar logo">
-            </a>
-        </div>
-        <div class="search-container">
-            <input type="checkbox" class="search-toggle-btn"></input>
-            <img class="icon-search"src="https://cdn.pixabay.com/photo/2013/07/12/14/49/find-148857_960_720.png" alt="search button"></img>
-            <img class="icon-search-close" src="https://cdn.pixabay.com/photo/2017/07/04/08/12/cross-2470297_960_720.png" alt="closing search button"></img>
-            <input class="searchbar" type="text" name="search" placeholder=" Search"></input>
-            <div class="searchbar-background"></div>
-        </div>
-        <div class="navlink-container">
-            <input type="checkbox" class="menu-toggle-btn"></input>
-            <div class="burger-menu"></div>
-            <ul class="menu">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="restaurant.html">Restaurants</a></li>
-                <li><a href="museum.html">Musées</a></li>
-                <li><a href="visites.html">Visites</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-     
-    <section class='carrousel'>
+    <section>
+        <nav>
+           <div class="nav-logo-container">
+               <a class="mobile-nav-logo-link" href="#">
+                   <img class="mobile-nav-logo" src="https://cdn.pixabay.com/photo/2018/05/02/22/22/cat-3369865_960_720.png" alt="secret paris navbar logo">
+               </a>
+   
+               <a class="desktop-nav-logo-link" href="#">
+                   <img class="desktop-nav-logo" src="https://cdn.pixabay.com/photo/2016/01/16/23/07/cat-1144200_960_720.png" alt="secret paris navbar logo">
+               </a>
+   
+           </div>
+           <a href="#">
+               <h1 class="title">Paris Secret</h1>
+           </a>
+           <div class="search-container">
+               <input type="checkbox" class="search-toggle-btn"></input>
+               <img class="icon-search"src="https://cdn.pixabay.com/photo/2013/07/12/14/49/find-148857_960_720.png" alt="search button"></img>
+               <img class="icon-search-close" src="https://cdn.pixabay.com/photo/2017/07/04/08/12/cross-2470297_960_720.png" alt="closing search button"></img>
+               <input class="searchbar" type="text" name="search" placeholder=" Search"></input>
+           </div>
+           <div class="navlink-container">
+               <input type="checkbox" class="menu-toggle-btn"></input>
+               <div class="burger-menu"></div>
+               <ul class="menu">
+                   <li><a href="#">Accueil</a></li>
+                   <li><a href="restaurant.html">Restaurants</a></li>
+                   <li><a href="museum.html">Musées</a></li>
+                   <li><a href="visites.html">Visites</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </div>
+       </nav>
+       <div class="nav-bottom"></div>
+   </section>
+       
+   
+<section>
     <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
 
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-            <li data-target="#carousel" data-slide-to="3"></li>
-            <li data-target="#carousel" data-slide-to="4"></li>
-        </ol>
+        
 
 
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" alt="Tour Eiffel"
+                 <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" alt="Tour Eiffel"
                     class="d-block">
             </div>
 
@@ -98,23 +98,39 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </section>
+</section>   
+<section>
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+        </ol>
+</section>
 
-    <div class="cards">
-        <div class="card">
-            <div onmouseover="translationButtonLink()" class="card-header">
-                <div class="card-image" ></div>
-            </div>
-            <div class="card-body">
-                <button class="card-name" onclick="window.open('https://www.kigard.fr/','_blank')">Tests tests</button>
-            </div>
+<div class="cards">
+    <div class="card">
+        <div onmouseover="translationButtonLink()" class="card-header">
+            <div class="card-image" ></div>
         </div>
-    </div>   
-          
-      <script src="index.js">        $('.carousel').carousel({
-        pause: "null"
-    })</script>
+        <div class="card-body">
+            <button class="card-name" onclick="window.open('https://www.kigard.fr/','_blank')">Tests tests</button>
+        </div>
+    </div>
+</div>   
 
+<section>
+    
+    <div class="footer-top"></div>
+    <footer class="footer"></footer>  
+</section>   
+      <script src="index.js"></script>
+      <script>
+        $('.carousel').carousel({
+            pause: "null"
+        })
+      </script> 
 
 </body>
 
