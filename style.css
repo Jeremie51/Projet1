@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.formulaire  {
-=======
 body {
     margin: 0;
     padding: 0;
@@ -293,15 +290,25 @@ nav {
     }
  }
 
-
-   
+#top{
+    display:flex;
+    justify-content: space-between;
+}
+.wcs{
+    float:right;
+    font-family: arial;
+    color: darkred;
+}
+.imgWcs {
+    width: 95%;
+    height: 95px;
+}  
 .titleForm  {
->>>>>>> f09a75e261253fb74deb152e93beab5ce5df59da
-    color: #4f859b;
+    color: rgb(76, 145, 167);
     font-family: Arial;
 }
 #formulaire {
-    width: 600px;
+    width: 500px;
     margin: 0;
     padding: 0;
     font-family: Arial;
@@ -311,11 +318,8 @@ nav {
   #email,
   #objet,
   #message {
-    width: 600px;
+    width: 500px;
     box-sizing: border-box;
-    /*padding:10px;
-   margin-top: 5px;*/
-
   }
   #message {
     vertical-align: top;
@@ -324,7 +328,6 @@ nav {
   #formulaire input {
     position: absolute;
   }
-
   .sendingBtn {
     padding: 0.9em 2em;
     border: 2px solid #084c6b;
@@ -360,11 +363,36 @@ nav {
     color: rgb(255, 255, 255);
    }
    .imgFormulaire{
-    width: 40%;
-    height: 200px;
+    width: 30%;
+    height: 150px;
    }
 
-   
+    .equipe {
+        display:flex;
+        text-align: center;
+        margin-top: 46px;
+    }    
+    .imgMember {
+        margin : 0 auto ; 
+        width: 90px;
+        height: 90px;
+    }
+   .member{
+        margin-top: 24px;
+        font-size: 20px;
+        color :rgb(34, 96, 131);
+        font-family:monospace;
+        font-weight:300;
+    }
+        .job{
+        margin-top: -3px;
+        font-size: 13px;
+        color :rgb(112, 112, 112);
+        font-family: monospace;
+        font-weight: 300;  
+    }
+
+
 .main-section {
     position: relative;
     width: 100vw;
