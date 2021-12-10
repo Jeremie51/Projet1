@@ -271,8 +271,6 @@ nav {
 #top {
     display:flex;
     justify-content: space-between;
-
-
 }
 .imgWcs {
     margin-top: 100px;
@@ -286,7 +284,7 @@ nav {
 }
 
 .titleForm  {
-    color: rgb(76, 145, 167);
+    color: #3e444e;
     font-family: Arial;
 }
 #formulaire {
@@ -295,7 +293,8 @@ nav {
     padding: 0;
     margin-bottom: auto;
     font-family: Arial;
-    background-color:rgb(76, 145, 167);
+    color : lightslategray;
+    background-color:#3e444e;
 }
   #name,
   #email,
@@ -314,14 +313,14 @@ nav {
   }
   .sendingBtn {
     padding: 0.9em 2em;
-    border: 2px solid #084c6b;
+    border: 2px solid grey;
     position: relative;
     overflow: hidden;
     background-color: transparent;
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
-    color: rgb(112, 112, 112);
+    color:white;
     transition: .3s;
     z-index: 1;
     font-family: inherit;
@@ -336,24 +335,21 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: rgb(34, 96, 131);
+    background:#3e444e;;
     transition: .5s ease;
     display: block;
     z-index: -1;
    }
-
    .sendingBtn:hover:before {
     width: 100%;
    }
-
    .sendingBtn:hover {
     color: rgb(255, 255, 255);
    }
-
    .imgFormulaire{
     margin-top: -80px;   
-    width: 40%;
-    height: 140px;
+    width: 35%;
+    height: 150px;
    }
    .about{
        font-family: monospace;
@@ -388,7 +384,7 @@ nav {
     .member{
         margin-top: 24px;
         font-size: 20px;
-        color :rgb(34, 96, 131);
+        color :#3e444e;
         font-family:monospace;
         font-weight:300;
     }
