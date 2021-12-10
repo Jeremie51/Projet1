@@ -5,6 +5,22 @@
     --transition: 0.5s;
 }
 
+/* :root {
+    --main-color: #5D7A98;
+    --second-color: #D6F4FF;
+    --transition: 0.5s;
+
+    background: linear-gradient(#3a697c, #A9AFBB);
+} */
+
+.page-title {
+    display: flex;
+    font-family:'Marck Script', cursive;
+    font-size: 60px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 
 body {
     margin: 0;
@@ -53,13 +69,7 @@ body {
 }
 
 
-:root {
-    --main-color: #5D7A98;
-    --second-color: #D6F4FF;
-    --transition: 0.5s;
 
-    background: linear-gradient(#3a697c, #A9AFBB);
-}
 
 /* navbar*/
 nav {
@@ -248,11 +258,11 @@ nav {
     bottom: 0vh;
 }
 
-#top{
+#top {
     display:flex;
     justify-content: space-between;
 }
-.wcs{
+.wcs {
     float:right;
     font-family: arial;
     color: darkred;
@@ -653,81 +663,76 @@ transition: transform 1s;
 
 /* End Florent section */
 
-.card-body {
+
+
+
+
+
+
+
+
+.cards {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: solid 1px lightgrey;
-    border-radius: 11px;
-    width: 215px;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    margin-right: 50px;
-    transition-duration: 0.8s;
-    box-shadow: 1px 4px 11px 2px rgba(0,0,0,0.36);
-}
-
-.card-header {
-    align-items: center;
-    display: flex;
-    width: 245px;
-    height: 225px;
-}
-
-.card-body {
-    padding: 10px 20px;
-    align-items: center;
-    display: flex;
-    height: 50px;
-}
-
-.card-image {
-    background-image: url("https://images3.bovpg.net/fw/media/1/5/2/3/8/52383.jpg");
-    background-position: center;
-    background-size: cover;
-    border: solid 1px lightgray;
-    border-radius: 11px;
-    width: 215px;
-    height: 215px;
-}
-
-.card-name {
-    justify-content: center;
-    align-items: center;
-    border: solid 1px lightgrey;
-    border-radius: 7px;
-    /* margin-left: 5px;
-    margin-right: 5px; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 10px;
-    margin-bottom: 5px;
-    width: 205px;
-    height: 40px;
-    background-color: #30d4d4;
-    /* transition: background-color 2s ease-out 100ms;
-    transition: transform 0.8s;
-    transition-duration: 0.8s; */
 }
+
+.card {
+    display: flex;
+    width: 230px;
+    height: 250px;
+    flex-direction: column;
+    box-shadow: 1px 4px 11px 2px rgba(0,0,0,0.36);
+    border-radius: 11px;  
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    transition: transform 0.8s;
+}
+
+.img-card {
+    height: 200px;
+    width: 215px;
+    border-radius: 11px;
+    background-position: center;
+    object-fit: cover;
+    border: solid 1px lightgray;
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.card-button {
+    width: 215px;
+    height: 30px;
+    border : solid 1px lightgrey;
+    border-radius: 9px;
+    margin-top : 6px;
+    margin-left: 7px;
+    background-color: lightseagreen;
+    color: black;
+}
+
+.card-button a {
+    color:black;
+}
+    
 
 .card:hover {
-    transition-duration: 0.8s;
     transform: scale(1.05);
     background-color: #eef1f1;
     box-shadow: 1px 4px 11px 2px rgba(0,0,0,0.36);
     opacity : 0.75;
 }
-    
 
-.card-image:hover {
-    opacity : 0.75;
-}
-
-.new-translation {
-    transform:translateY(-110px);
+.card-button a:hover {
+    text-decoration: none;
+    font-weight: bold;
     transition: transform 0.8s;
-    transition-duration: 0.8s;
 }
+
+
 
 
 
