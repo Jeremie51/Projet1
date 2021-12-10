@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Visites sur Paris</title>
+        <title>Lieux à visiter</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -22,16 +22,16 @@
     <section>
         <nav>
            <div class="nav-logo-container">
-               <a class="mobile-nav-logo-link" href="#">
+               <a class="mobile-nav-logo-link" href="index.html">
                    <img class="mobile-nav-logo" src="https://cdn.pixabay.com/photo/2018/05/02/22/22/cat-3369865_960_720.png" alt="secret paris navbar logo">
                </a>
     
-               <a class="desktop-nav-logo-link" href="#">
+               <a class="desktop-nav-logo-link" href="index.html">
                    <img class="desktop-nav-logo" src="https://cdn.pixabay.com/photo/2016/01/16/23/07/cat-1144200_960_720.png" alt="secret paris navbar logo">
                </a>
     
            </div>
-           <a href="#">
+           <a href="index.html">
                <h1 class="title">Paris Secret</h1>
            </a>
            <div class="search-container">
@@ -55,8 +55,47 @@
        <div class="nav-bottom"></div>
     </section>
     
+
     
-    <section class="main-section">
+<h1 class="page-title">Lieux à visiter</h1>
+
+<section>
+    <div class="cards">
+        <div class="card">
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
+            </div>
+            <button class="card-button"><a href="#section1">Les dernières nouvelles</a></button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
+            </div>
+            <button class="card-button"><a href="#section2">Les dernières nouvelles</a></button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
+            </div>
+            <button class="card-button"><a href="#section3">Les dernières nouvelles</a></button>
+        </div>
+    </div> 
+</section>
+
+<section class="transition-section img-back8">
+
+</section>
+
+    <section class="main-section" id="section1">
         <div class="main-container">
             <div class="title-container">
                 <h2>Le mur des je t'aime</h2>
@@ -75,8 +114,8 @@
                 </div>
             </div>
             <div class="button-container">
-                <button class="link-button" onclick="window.open('https:https://goo.gl/maps/GUMmVoNXvmr9Smvi7','_blank')">Map</button>
-                <button class="link-button" onclick="window.open('https:','_blank')">En savoir plus</button>
+                <button class="link-button" onclick="window.open('https://goo.gl/maps/GUMmVoNXvmr9Smvi7','_blank')">Map</button>
+                <button class="link-button" onclick="window.open('http://www.lesjetaime.com/','_blank')">En savoir plus</button>
             </div>
         </div>
     </section>
@@ -85,7 +124,7 @@
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section2">
         <div class="main-container-reverse">
             <div class="title-container-reverse">
                 <h2>Les Catacombes</h2>
@@ -99,11 +138,12 @@
 
                 <div class="paragraph-container">
                     <p>Près de trois cents kilomètres de galeries s'étalent sous Paris intra-muros, sur parfois trois niveaux de carrières. La profondeur moyenne est d'environ vingt mètres sous le niveau du sol naturel. Lorsque ces carrières étaient actives, on en extrayait de la pierre à bâtir, qui a permis pendant plusieurs siècles de construire les bâtiments de Paris sans importer d'autres matériaux de construction.</p>
+                    <p class="contact-info">1 Av. du Colonel Henri Rol-Tanguy, 75014 Paris<br>01 43 22 47 63</p>
                 </div>
             </div>
             <div class="button-container">
-                <button class="link-button">Map</button>
-                <button class="link-button">En savoir plus</button>
+                <button class="link-button" onclick="window.open('https://goo.gl/maps/qvc9xqzFs14abSy36','_blank')">Map</button>
+                <button class="link-button" onclick="window.open('https://www.catacombes.paris.fr/','_blank')">En savoir plus</button>
             </div>
         </div>
     </section>
@@ -112,7 +152,7 @@
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section3">
         <div class="main-container">
             <div class="title-container">
                 <h2>La coulée verte</h2>
@@ -126,24 +166,15 @@
 
                 <div class="paragraph-container">
                     <p>À l’origine, c’était une ligne de chemin de fer qui se dessinait dans tout l’Est parisien jusque dans le 77, à Verneuil-l’Étang très exactement. Aujourd’hui, c’est la « Coulée verte », une promenade verdoyante établie sur 4,5 kilomètres en plein cœur du 12e arrondissement, inaugurée en 1993. Dépaysement garanti ! </p>
+                    <p class="contact-info">1 Coulée Verte René-Dumont, 75012 Paris</p>
                 </div>
             </div>
             <div class="button-container">
-                <button class="link-button">Map</button>
-                <button class="link-button">En savoir plus</button>
+                <button class="link-button" onclick="window.open('https://goo.gl/maps/k325zBfcqvTAZcYZ9','_blank')">Map</button>
+                <button class="link-button" onclick="window.open('https://www.paris.fr/pages/de-bastille-a-vincennes-par-la-coulee-verte-4932','_blank')">En savoir plus</button>
             </div>
         </div>
     </section>
-    <div class="cards">
-        <div class="card">
-            <div onmouseover="translationButtonLink()" class="card-header">
-                <div class="card-image" ></div>
-            </div>
-            <div class="card-body">
-                <button class="card-name" onclick="window.open('https://www.kigard.fr/','_blank')">Tests tests</button>
-            </div>
-        </div>
-    </div> 
 
     <section>
         <div class="footer-top"></div>
@@ -153,5 +184,7 @@
     <script src="visites.js">
     </script>
 
+    <script src="scroll.js">
+    </script>
 </body>
 </html>

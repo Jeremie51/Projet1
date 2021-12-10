@@ -21,16 +21,16 @@
 <section>
     <nav>
         <div class="nav-logo-container">
-            <a class="mobile-nav-logo-link" href="#">
+            <a class="mobile-nav-logo-link" href="index.html">
                 <img class="mobile-nav-logo" src="https://cdn.pixabay.com/photo/2018/05/02/22/22/cat-3369865_960_720.png" alt="secret paris navbar logo">
             </a>
 
-            <a class="desktop-nav-logo-link" href="#">
+            <a class="desktop-nav-logo-link" href="index.html">
                 <img class="desktop-nav-logo" src="https://cdn.pixabay.com/photo/2016/01/16/23/07/cat-1144200_960_720.png" alt="secret paris navbar logo">
             </a>
 
         </div>
-        <a href="#">
+        <a href="index.html">
             <h1 class="title">Paris Secret</h1>
         </a>
         <div class="search-container">
@@ -53,19 +53,38 @@
     </nav>
     <div class="nav-bottom"></div>
 
+    <h1 class="page-title">Musées à découvrir</h1>
+
+
+<section>
     <div class="cards">
         <div class="card">
-            <div onmouseover="translationButtonLink()" class="card-header">
-                <div class="card-image" ></div>
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
             </div>
-            <div class="card-body">
-                <button class="card-name" onclick="window.open('https://www.kigard.fr/','_blank')">Tests tests</button>
+            <button class="card-button"><a href="#section1">Le mur des Je t'aime</a></button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
             </div>
+            <button class="card-button"><a href="#section2">Les dernières nouvelles</a></button>
         </div>
     </div> 
+</section>
+
+<section class="transition-section img-back4">
 
 </section>
-    <section class="main-section">
+
+</section>
+    <section class="main-section" id="section1">
         <div class="main-container">
             <div class="title-container">
                 <h2>Musée de la Chasse et de la Nature</h2>
@@ -84,17 +103,17 @@
                 </div>
             </div>
             <div class="button-container">
-                <button class="link-button" onclick="window.open('https:','_blank')">Map</button>
-                <button class="link-button" onclick="window.open('https:','_blank')">En savoir plus</button>
+                <button class="link-button" onclick="window.open('https://goo.gl/maps/1EUb43eJf5SD4RZu9','_blank')">Map</button>
+                <button class="link-button" onclick="window.open('https://www.chassenature.org/','_blank')">En savoir plus</button>
             </div>
         </div>
     </section>
 
-    <section class="transition-section img-back4">
+    <section class="transition-section img-back5">
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section2">
         <div class="main-container-reverse">
             <div class="title-container-reverse">
                 <h2>La maison Deyrolle</h2>
@@ -108,18 +127,19 @@
 
                 <div class="paragraph-container">
                     <p>Située entre le musée d'Orsay et le musée Maillol, dans le très chic 7e arrondissement, la Maison Deyrolle est bien plus qu'une boutique... c'est un véritable cabinet de curiosités. Créée en 1831, la maison Deyrolle est une référence mondiale pour son savoir-faire de taxidermiste et d'entomologiste. On est particulièrement émerveillé en découvrant les pièces exceptionnelles exposées au 1er étage du 46 rue du Bac : boîtes à papillons foisonnantes de couleurs, mammifères (ours, lion, zèbre...) et espèces d'oiseaux (cygne, autruche...) plus vrais que nature. Les artistes et scientifiques ne s'y trompent d'ailleurs pas, puisque la Maison Deyrolle collabore avec de nombreux créateurs de mode, collectionneurs, décorateurs, photographes, cinéastes... </p>
+                    <p class="contact-info">46 Rue du Bac, 75007 Paris<br>01 42 22 30 07</p>
                 </div>
             </div>
             <div class="button-container">
-                <button class="link-button">Map</button>
-                <button class="link-button">En savoir plus</button>
+                <button class="link-button" onclick="window.open('https://g.page/Deyrolle?share','_blank')">Map</button>
+                <button class="link-button" onclick="window.open('https://www.deyrolle.com/','_blank')">En savoir plus</button>
             </div>
         </div>
     </section>
 
-    <section class="transition-section img-back5">
-
-    </section>
+    <div id="scroll_to_top">
+        <img class="scroll-img" src="https://cdn.pixabay.com/photo/2012/04/05/01/58/arrow-25859_960_720.png" alt="Retourner en haut" />
+    </div>
     
     <section>
         <div class="footer-top"></div>
@@ -127,6 +147,8 @@
     </section>
 
     <script src="museum.js">
+    </script>
+    <script src="scroll.js">
     </script>
 </body>
 </html>
