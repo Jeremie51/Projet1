@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Secret Paris</title>
+        <title>Lieux à visiter</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -22,16 +22,16 @@
     <section>
         <nav>
            <div class="nav-logo-container">
-               <a class="mobile-nav-logo-link" href="#">
+               <a class="mobile-nav-logo-link" href="index.html">
                    <img class="mobile-nav-logo" src="https://cdn.pixabay.com/photo/2018/05/02/22/22/cat-3369865_960_720.png" alt="secret paris navbar logo">
                </a>
     
-               <a class="desktop-nav-logo-link" href="#">
+               <a class="desktop-nav-logo-link" href="index.html">
                    <img class="desktop-nav-logo" src="https://cdn.pixabay.com/photo/2016/01/16/23/07/cat-1144200_960_720.png" alt="secret paris navbar logo">
                </a>
     
            </div>
-           <a href="#">
+           <a href="index.html">
                <h1 class="title">Paris Secret</h1>
            </a>
            <div class="search-container">
@@ -44,7 +44,7 @@
                <input type="checkbox" class="menu-toggle-btn"></input>
                <div class="burger-menu"></div>
                <ul class="menu">
-                   <li><a href="#">Accueil</a></li>
+                   <li><a href="index.html">Accueil</a></li>
                    <li><a href="restaurant.html">Restaurants</a></li>
                    <li><a href="museum.html">Musées</a></li>
                    <li><a href="visites.html">Visites</a></li>
@@ -55,8 +55,42 @@
        <div class="nav-bottom"></div>
     </section>
     
-    
-    <section class="main-section">
+<h1 class="page-title">Lieux à visiter</h1>
+
+<section>
+    <div class="cards">
+        <div class="card">
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
+            </div>
+            <button class="card-button"><a href="#section1">Les dernières nouvelles</a></button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
+            </div>
+            <button class="card-button"><a href="#section2">Les dernières nouvelles</a></button>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img 
+                src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/12/d6b7321e-f410-4f21-a625-b085525a59fb/870x489_gettyimages-959217164.webp" 
+                class="img-card" 
+                alt="Le mur des Je t'aime">
+            </div>
+            <button class="card-button"><a href="#section3">Les dernières nouvelles</a></button>
+        </div>
+    </div> 
+</section>
+
+
+    <section class="main-section" id="section1">
         <div class="main-container">
             <div class="title-container">
                 <h2>Le mur des je t'aime</h2>
@@ -85,7 +119,7 @@
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section2">
         <div class="main-container-reverse">
             <div class="title-container-reverse">
                 <h2>Les Catacombes</h2>
@@ -112,7 +146,7 @@
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section3">
         <div class="main-container">
             <div class="title-container">
                 <h2>La coulée verte</h2>
@@ -134,16 +168,6 @@
             </div>
         </div>
     </section>
-    <div class="cards">
-        <div class="card">
-            <div onmouseover="translationButtonLink()" class="card-header">
-                <div class="card-image" ></div>
-            </div>
-            <div class="card-body">
-                <button class="card-name" onclick="window.open('https://www.kigard.fr/','_blank')">Tests tests</button>
-            </div>
-        </div>
-    </div> 
 
     <section>
         <div class="footer-top"></div>
