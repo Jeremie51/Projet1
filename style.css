@@ -749,12 +749,12 @@ transition: transform 1s;
     border-radius: 9px;
     margin-top : 6px;
     margin-left: 7px;
-    background-color: lightseagreen;
-    color: black;
+    background-color: var(--main-color);
+    font-size: 17px;
 }
 
 .card-button a {
-    color:black;
+    color: var(--second-color);
 }
     
 
