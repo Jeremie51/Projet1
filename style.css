@@ -729,18 +729,6 @@ transition: transform 1s;
     transition: transform 0.8s;
 }
 
-@media screen and (max-width: 767px) {
-
-    .card-button {
-        width: 92%;
-        font-size: 12px;
-    }
-
-    .img-card {
-        width: 92%;
-    }
-}
-
 
 
 
