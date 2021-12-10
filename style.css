@@ -30,9 +30,29 @@ body {
     
 }
 
+.introduction {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.quotes {
+    font-family:'Marck Script', cursive;
+    font-size: 30px;
+}
+
+.presentation {
+    font-size: 30px;
+}
+
+
 /* carousel */
 #carousel {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    width: 800px;
     margin: 0 auto;
     margin-top: 120px;
     cursor: pointer;
@@ -393,6 +413,7 @@ nav {
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 50px;
+    background-color: white;
 
 }
 
@@ -481,15 +502,15 @@ nav {
     cursor: pointer;
     transition: ease-out 0.5s;
     border-radius: 10px;
-    border: 2px solid #8FA998;
-    border-radius: 10px;
+    border: 2px solid var(--second-color);
+    border-radius: 10px;    
     box-shadow: 0px 10px 13px -7px #8FA998, 5px 5px 8px 5px rgba(201,97,255,0);
 
    }
    
    .link-button:hover {
     color: white;
-    box-shadow: inset 0 -100px 0 0 #8FA998;
+    box-shadow: inset 0 -100px 0 0 var(--main-color);
    }
    
    .link-button:active {
@@ -687,7 +708,7 @@ transition: transform 1s;
 
 .cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 10px;
 }
@@ -701,6 +722,7 @@ transition: transform 1s;
     border-radius: 11px;  
     margin-top: 50px;
     margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 50px;
     transition: transform 0.8s;
 }
@@ -724,12 +746,12 @@ transition: transform 1s;
     border-radius: 9px;
     margin-top : 6px;
     margin-left: 7px;
-    background-color: lightseagreen;
-    color: black;
+    background-color: var(--main-color);
+    font-size: 17px;
 }
 
 .card-button a {
-    color:black;
+    color: var(--second-color);
 }
     
 
