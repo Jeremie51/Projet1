@@ -373,8 +373,9 @@ nav {
         margin : 0 auto ; 
         width: 90px;
         height: 90px;
-    }
+    } 
     .imgMember:hover{
+        padding: 0;
         opacity: 100.0;
         margin : 0 auto ; 
         width: 90px;
