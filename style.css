@@ -30,29 +30,9 @@ body {
     
 }
 
-.introduction {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
-    flex-direction: column;
-}
-
-.quotes {
-    font-family:'Marck Script', cursive;
-    font-size: 30px;
-}
-
-.presentation {
-    font-size: 30px;
-}
-
-
 /* carousel */
 #carousel {
-    display: flex;
-    align-items: center;
-    width: 800px;
+    width: 50%;
     margin: 0 auto;
     margin-top: 120px;
     cursor: pointer;
@@ -271,32 +251,29 @@ nav {
 #top {
     display:flex;
     justify-content: space-between;
-
-
+}
+.wcs {
+    float:right;
+    font-family: arial;
+    color: darkred;
 }
 .imgWcs {
-    margin-top: 100px;
-    width: 110%;
-    height: 90px;
-} 
-.imgLocal {
-    margin-top: 100px;
-    width: 110%;
-    height: 300px;
-}
-
+    width: 95%;
+    height: 95px;
+}  
 .titleForm  {
     color: rgb(76, 145, 167);
     font-family: Arial;
 }
+
 #formulaire {
     width: 500px;
     margin: 0;
     padding: 0;
-    margin-bottom: auto;
     font-family: Arial;
     background-color:rgb(76, 145, 167);
 }
+
   #name,
   #email,
   #objet,
@@ -304,6 +281,7 @@ nav {
     width: 500px;
     box-sizing: border-box;
   }
+  
   #message {
     vertical-align: top;
     height: 10em;
@@ -343,7 +321,7 @@ nav {
    }
 
    .sendingBtn:hover:before {
-    width: 100%;
+    width: 105%;
    }
 
    .sendingBtn:hover {
@@ -351,41 +329,21 @@ nav {
    }
 
    .imgFormulaire{
-    margin-top: -80px;   
-    width: 40%;
-    height: 140px;
+    width: 30%;
+    height: 150px;
    }
-   .about{
-       font-family: monospace;
-   }
-   #main_contact{
-    margin-left: auto;
-    margin-right: auto;
-    width:1300px;
-   }
-   .team{
-       margin-right: 0px;
-       margin-left:100px;
-   }
+
     .equipe {
         display:flex;
         text-align: center;
         margin-top: 46px;
     }    
     .imgMember {
-        opacity: 0.0;
         margin : 0 auto ; 
         width: 90px;
         height: 90px;
     }
-    .imgMember:hover{
-        opacity: 100.0;
-        margin : 0 auto ; 
-        width: 90px;
-        height: 90px;
-    }
-
-    .member{
+   .member{
         margin-top: 24px;
         font-size: 20px;
         color :rgb(34, 96, 131);
@@ -400,12 +358,6 @@ nav {
         font-weight: 300;  
     }
 
-    @media screen and (max-width: 600px) {
-        .menu {
-          display: none;
-        }
-      }
-      
 
  /* Start Florent section   */
 .main-section {
@@ -417,7 +369,6 @@ nav {
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 50px;
-    background-color: white;
 
 }
 
@@ -497,24 +448,20 @@ nav {
     display: inline-block;
     margin: 15px;
     padding: 10px 20px;
-    text-align: center;
-    font-size: 14px;
-    /* letter-spacing: 1px; */
-    text-decoration: none;
     color: black;
     background: transparent;
     cursor: pointer;
     transition: ease-out 0.5s;
     border-radius: 10px;
-    border: 2px solid var(--second-color);
-    border-radius: 10px;    
+    border: 2px solid #8FA998;
+    border-radius: 10px;
     box-shadow: 0px 10px 13px -7px #8FA998, 5px 5px 8px 5px rgba(201,97,255,0);
 
    }
    
    .link-button:hover {
     color: white;
-    box-shadow: inset 0 -100px 0 0 var(--main-color);
+    box-shadow: inset 0 -100px 0 0 #8FA998;
    }
    
    .link-button:active {
@@ -712,7 +659,7 @@ transition: transform 1s;
 
 .cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 10px;
 }
@@ -726,7 +673,6 @@ transition: transform 1s;
     border-radius: 11px;  
     margin-top: 50px;
     margin-left: 100px;
-    margin-right: 100px;
     margin-bottom: 50px;
     transition: transform 0.8s;
 }
