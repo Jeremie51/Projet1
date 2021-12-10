@@ -626,16 +626,31 @@ nav {
 }
 
 #scroll_to_top {
-    display: none;
+    display: flex;
     position: fixed;
     width: 25px;
     height: 25px;
     bottom: 50px;
     right: 30px;
+    transition: transform 1s;
+    scale: 1.5
+
   }
-  #scroll_to_top img {
+.scroll-img {
+width: 25px;
+opacity: 40%;
+transition: transform 1s;
+
+}
+
+.scroll-img:hover {
     width: 25px;
-  }
+    opacity: 100%;
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /*Safari 3-8*/
+    transform: scale(1.2); 
+    }
+
 /* End Florent section */
 
 .card-body {
